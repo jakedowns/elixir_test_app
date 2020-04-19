@@ -21,7 +21,7 @@ config :community, CommunityWeb.Endpoint,
        url: [host: "${APP_NAME}.gigalixirapp.com", port: 443],
        cache_static_manifest: "priv/static/cache_manifest.json"
 
-config :community, CommunityWeb.Repo,
+config :community, Community.Repo,
        adapter: Ecto.Adapters.Postgres,
        url: {:system, "DATABASE_URL"},
        database: "",
