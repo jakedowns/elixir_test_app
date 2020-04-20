@@ -19,7 +19,8 @@ config :community, CommunityWeb.Endpoint,
        server: true, # Without this line, your app will not start the web server!
        secret_key_base: "${SECRET_KEY_BASE}",
        url: [host: "${APP_NAME}.gigalixirapp.com", port: 443],
-       cache_static_manifest: "priv/static/cache_manifest.json"
+       cache_static_manifest: "priv/static/cache_manifest.json",
+       secret_key_base: "QRw7s/jiwrtMjJrMLOKfJARhstIxnvvWe6u6zPUcdKNATKuxhCtz51Y/ecHZyfYO"
 
 config :community, Community.Repo,
        adapter: Ecto.Adapters.Postgres,
@@ -71,4 +72,4 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"
